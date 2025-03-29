@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crazy in Love</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>Crazy in Love!</header>
+  <main>
+<div class="music-toggle">
+    <button onclick="toggleMusic()">Toggle Music</button>
+  </div>
+  <audio id="bgMusic" loop>
+    <source src="khwab.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+    <div class="message">
+      <p>
+        Hey, you're not just special—you're the spark that lights up every day in the most unexpected, crazy way. This site is my wild, fun way of showing you how much you mean to me.
+      </p>
+    </div>
+    <button class="heart-button" onclick="createHearts(),musicPlay()">Click me for a burst of love!</button>
+  </main>
+  <footer>Made with ❤️ just for you</footer>
+  <script src="script.js"></script>
+</body>
+</html>

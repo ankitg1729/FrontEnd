@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #ff5f6d, #ffc371);
+    animation: gradient 10s ease infinite;
+    min-height: 100vh;
+    position: relative;
+  }
+  @keyframes gradient {
+    0% { background: linear-gradient(45deg, #ff5f6d, #ffc371); }
+    50% { background: linear-gradient(45deg, #23a6d5, #23d5ab); }
+    100% { background: linear-gradient(45deg, #ff5f6d, #ffc371); }
+  }
+  header {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+  .birthday{
+    padding:0 auto;
+   width:20px;
+   height:50px;
+  }
+  
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: white;
+  }
+  .message {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    font-size: 1.3rem;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+  .heart-button {
+    margin: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    background: #ff4b2b;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  .heart-button:hover {
+    transform: scale(1.1);
+  }
+  .heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* Replace the URL below with your new heart image URL */
+    background: url('heart.png') no-repeat center center;
+    background-size: contain;
+    animation: float 3s ease-in-out forwards;
+    pointer-events: none;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(0.8);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) scale(1.2);
+      opacity: 0;
+    }
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+ /* Add some style for the music toggle */
+.music-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  .music-toggle button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ff4b2b;
+    color: white;
+    cursor: pointer;
+  }
+  .music-toggle button:hover {
+    background: #e63946;
+  }
+  
