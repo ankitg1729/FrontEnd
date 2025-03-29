@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form to share your feedback.</p>
+
+    <form id="survey-form">
+        <!-- Name Input -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <!-- Email Input -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <!-- Number Input -->
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="number" placeholder="Enter your age" min="10" max="100">
+
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <p>Choose one:</p>
+        <input type="radio" id="radio1" name="radio-group" value="radio1">
+        <label for="radio1">Option A</label>
+        <input type="radio" id="radio2" name="radio-group" value="radio2">
+        <label for="radio2">Option B</label>
+
+        <br><br>
+
+        <!-- Checkboxes -->
+        <p>Select all that apply:</p>
+        <input type="checkbox" id="checkbox1" name="checkbox-group" value="checkbox1">
+        <label for="checkbox1">Choice 1</label>
+        <input type="checkbox" id="checkbox2" name="checkbox-group" value="checkbox2">
+        <label for="checkbox2">Choice 2</label>
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
